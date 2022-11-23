@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const { cartItems } = useSelector((state) => state.cart);
-  const { favouriteItems } = useSelector((state) => state.favourite);
+  // const { cartItems } = useSelector((state) => state.cart);
+  // const { favouriteItems } = useSelector((state) => state.favourite);
 
   const switcherTab = useRef(null);
 
@@ -190,7 +190,7 @@ const Header = () => {
                 right: "3.5%",
               }}
             >
-              <span>{favouriteItems.length}</span>
+              {/* <span>{favouriteItems.length}</span> */}
             </div>
           </div>
           <div className="cart__items flex align__items__center">
@@ -222,7 +222,7 @@ const Header = () => {
                   right: "3.5%",
                 }}
               >
-                <span>{cartItems.length}</span>
+                {/* <span>{cartItems.length}</span> */}
               </div>
             </div>
           </div>
